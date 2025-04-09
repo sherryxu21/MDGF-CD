@@ -5,6 +5,27 @@ For more information, please see our published paper at [Information Fusion](htt
 
 ![flowchart](flowchart.png)
 
+## Installation
+
+Clone this repo:
+
+```shell
+git clone https://github.com/sherryxu21/MDGF-CD.git
+cd MDGF-CD
+```
+
+## Train
+
+```
+python main_cd.py
+```
+
+## Evaluate
+
+```
+python eval_cd.py
+```
+
 ## Data structure
 
 ```
@@ -33,6 +54,5 @@ If you use this code for your research, please cite our paper:
 
 Code is released for non-commercial and research purposes **only**. For commercial purposes, please contact the authors.
 
-## Disclaimer
-Appreciate the work from the following repository:
-- https://github.com/wgcban/ChangeFormer (Our MDGF-CD is implemented on the code provided in this repository).
+## Acknowledgements
+Appreciate the work from the following repositories: [ChangeFormer](https://github.com/wgcban/ChangeFormer), [GCViT](https://github.com/NVlabs/GCViT), [CTD-Former](https://github.com/RSMagneto/CTD-Former).
