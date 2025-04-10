@@ -1,7 +1,3 @@
-import os
-os.environ["CUDA_DEVICE_ORDER"] = 'PCI_BUS_ID'  # 使Pytorch序号和英伟达序号一样
-os.environ["CUDA_VISIBLE_DEVICES"] = "5"
-os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
 from argparse import ArgumentParser
 import torch, gc
@@ -68,7 +64,7 @@ if __name__ == '__main__':
     # optimizer
     parser.add_argument('--optimizer', default='adamw', type=str)
     parser.add_argument('--lr', default=0.0001, type=float)
-    parser.add_argument('--max_epochs', default=200, type=int)
+    parser.add_argument('--max_epochs', default=500, type=int)
     parser.add_argument('--lr_policy', default='linear', type=str,
                         help='linear | step')
     parser.add_argument('--lr_decay_iters', default=100, type=int)
