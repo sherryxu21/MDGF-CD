@@ -1,7 +1,4 @@
 import os
-os.environ["CUDA_DEVICE_ORDER"] = 'PCI_BUS_ID'  # 使Pytorch序号和英伟达序号一样
-os.environ["CUDA_VISIBLE_DEVICES"] = "5"
-os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
 from argparse import ArgumentParser
 
@@ -41,7 +38,7 @@ def main():
     parser.add_argument('--embed_dim', default=96, type=int)
     parser.add_argument('--net_G', default='mdgf-cd', type=str)
 
-    parser.add_argument('--checkpoint_name', default='/home/students/master/2023/xur/xr/MDGF-CD/checkpoints/CLCD/MDGF_CD/best_ckpt.pt', type=str)
+    parser.add_argument('--checkpoint_name', default='best_ckpt.pt', type=str)
 
     args = parser.parse_args()
     utils.get_device(args)
