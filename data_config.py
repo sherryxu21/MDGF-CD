@@ -7,13 +7,13 @@ class DataConfig:
         self.data_name = data_name
         if data_name == 'LEVIR':
             self.label_transform = "norm"
-            self.root_dir = '/home/students/master/2023/xur/xr/LEVIR-CD/'
+            self.root_dir = '/data/LEVIR-CD/'
         elif data_name == 'WHU':
             self.label_transform = "norm"
-            self.root_dir = '/home/students/master/2023/xur/xr/Dataset/WHU-CD/'
+            self.root_dir = '/data/WHU-CD/'
         elif data_name == 'CLCD':
             self.label_transform = "norm"
-            self.root_dir = '/home/students/master/2023/xur/xr/Dataset/CLCD-256/'
+            self.root_dir = '/data/CLCD-256/'
         else:
             raise TypeError('%s has not defined' % data_name)
         return self
